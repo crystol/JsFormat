@@ -1363,8 +1363,6 @@ class Beautifier:
 
         self.output_space_before_token = True
         self.append_token(token_text)
-        self.append_newline(preserve_statement_flags = True)
-
 
     def handle_dot(self, token_text):
         if self.is_special_word(self.flags.last_text):
